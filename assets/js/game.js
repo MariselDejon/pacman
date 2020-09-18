@@ -1,10 +1,15 @@
+import scene1 from "./scene1.js";
+import scene2 from "./scene2.js";
+import scene3 from "./scene3.js";
+
 //definición y configuración de la variable más importante del juego.
 var config = {
   type: Phaser.AUTO,
-  width: 900,
-  height: 600,
   scale: {
-    autoCenter: Phaser.Scale.CENTER_BOTH, //ubicación del juego en el centro de la ventana del navegador.
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH, //centramos el juego a la mitad de la ventana del navegador.
+    width: 900, //ancho de la pantalla.
+    height: 600, //alto de la pantalla.
   },
   physics: {
     default: "arcade", //tipo de físicas usadas.
@@ -15,14 +20,4 @@ var config = {
   },
   scene: [scene1, scene2, scene3], //escenas que componen al juego.
 };
-
-//inicialización de phaser con los ajustes definidos anteriormente.
-var game = new Phaser.Game(config);
-
-//variables utilizadas en las demás escenas.
-var player;
-var mapa;
-var tilesets;
-var level;
-var solidos;
-var cursors;
+game = new Phaser.Game(config);

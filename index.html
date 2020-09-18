@@ -12,10 +12,23 @@
 
     <!--scripts que componen al videojuego-->
     <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
-    <script src="/assets/js/scene1.js"></script>
-    <script src="/assets/js/scene2.js"></script>
-    <script src="/assets/js/scene3.js"></script>
-    <script src="assets/js/game.js"></script>
+    <script type="module" src="assets/js/game.js"></script>
+    <script>
+      var game = [];
+      var player = [];
+      var ghost = [];
+      var mapa = [];
+      var tilesets = [];
+      var dinamicos = [];
+      var score = 0;
+      var points = 0;
+      var level = [];
+      var solidos = [];
+      var cursors = [];
+      var random = [];
+      var velX = [];
+      var velY = -100;
+    </script>
   </head>
 
   <!--color fondo de la página-->

@@ -26,3 +26,4 @@ class scene2 extends Phaser.Scene {
       .on("pointerdown", () => this.scene.start("main"));
   }
 }
+export default scene2;
